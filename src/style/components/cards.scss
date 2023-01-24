@@ -1,0 +1,72 @@
+.cards {
+  background: $color2;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  font-size: 0.8rem;
+  margin: 0 auto 20px;
+
+  img {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+
+  h3 {
+    font-family: "Alata", sans-serif;
+    margin: 10px 0;
+  }
+
+  p {
+    color: $white2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  .average {
+    color: $white2;
+    font-family: "Alata", sans-serif;
+    margin: 10px 0;
+    color: $white1;
+
+    i {
+      margin-left: 10px;
+    }
+  }
+
+  .genre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    p {
+      padding: 5px;
+      border-radius: 10px;
+      background: $color3;
+      margin-right: 10px;
+    }
+  }
+
+  button {
+    background: transparent;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    font-size: 2rem;
+    color: $white2;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: $white1;
+    }
+
+    &:active {
+      transform: translateX(-5px);
+    }
+  }
+}

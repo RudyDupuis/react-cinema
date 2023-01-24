@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+$color1: rgb(39, 39, 82);
+$color2: rgb(44, 44, 44);
+$color3: rgb(66, 66, 66);
+$white1: rgb(215, 215, 215);
+$white2: rgb(189, 189, 189);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: $white1;
+  text-decoration: none;
+}
+
+body {
+  background: $color1;
+  color: $white1;
+}
+
+h1 {
+  margin: 50px 0 70px 0;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 330px) {
+    margin-top: 120px;
+  }
+}
